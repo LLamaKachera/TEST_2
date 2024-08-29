@@ -1,3 +1,8 @@
+print("test")
+print("test")
+print("test")
+print("test")
+print("test")
 def min_elements_to_remove(t, test_cases):
     results = []
     

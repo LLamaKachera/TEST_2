@@ -1,3 +1,8 @@
+print("test")
+print("test")
+print("test")
+print("test")
+print("test")
 def count_bits(num):
     count = 0
     while num:
