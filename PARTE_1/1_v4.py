@@ -17,14 +17,6 @@ def find_unique_indices(data):
         print(index)
 
 # Entrada
-'''
-data = [
-    [11, 13, 11, 11],
-    [1, 4, 4, 4, 4],
-    [3, 3, 3, 3, 10, 3, 3, 3, 3, 3],
-    [20, 20, 10]
-]
-'''
 t = int(input())
 vector=[]
 for _ in range(t):
@@ -36,7 +28,7 @@ for _ in range(t):
     vector.clear()
 
     
-#find_unique_indices(data)
+find_unique_indices(data)
 
 
 
