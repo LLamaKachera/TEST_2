@@ -1,0 +1,18 @@
+PRIMERA PARTE
+O(1)
+O(1)
+O(1)
+O(√n)
+O(1)            
+O(n/i)
+O(1)
+O(1)
+------------
+6 + √n + n/i
+
+O(1) 
+O(n)             
+O(n log(log(n)))  
+O(n)
+O(1)  
+O(1)

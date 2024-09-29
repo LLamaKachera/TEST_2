@@ -20,3 +20,8 @@ for _ in range(t):
     n = int(input())
     notas = list(map(int, input().split()))
     find_unique_indices([notas])
+
+
+t = int(input())
+a=140
+print(a)

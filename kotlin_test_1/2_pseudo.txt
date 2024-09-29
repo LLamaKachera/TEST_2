@@ -1,0 +1,15 @@
+Algoritmo Pseudo_2
+    Proceso DiasDeVida
+        Definir anoNacimiento, anoActual, anosVividos, diasVividos Como Entero
+
+        Escribir "Ingrese su año de nacimiento:"
+        Leer anoNacimiento
+        Escribir "Ingrese el año actual:"
+        Leer anoActual
+
+        anosVividos = anoActual - anoNacimiento
+        diasVividos = anosVividos * 365
+
+        Escribir "Días vividos: ", diasVividos
+    FinProceso
+FinAlgoritmo

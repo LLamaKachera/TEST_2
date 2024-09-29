@@ -1,0 +1,42 @@
+Algoritmo Pseudo_2
+    Proceso FactorialDelDigitoMenor
+        Definir nota, digitoMenor, fact Como Entero
+
+        Escribir "Ingrese una nota final:"
+        Leer nota
+
+        digitoMenor = Dig_Menor(nota)
+        fact = Factorial(digitoMenor)
+
+        Muestra(fact)
+    FinProceso
+
+    Funcion Dig_Menor(numero) Como Entero
+        Definir n, menor, digito Como Entero
+        n = numero
+        menor = 9
+
+        Mientras n > 0 Hacer
+            digito = n % 10
+            Si digito < menor Entonces
+                menor = digito
+            FinSi
+            n = n / 10
+        FinMientras
+
+        Retornar menor
+    FinFuncion
+
+    Funcion Factorial(n) Como Entero
+        Si n <= 1 Entonces
+            Retornar 1
+        Sino
+            Retornar n * Factorial(n - 1)
+        FinSi
+    FinFuncion
+
+    SubProceso Muestra(valor)
+        Escribir "Factorial del dígito menor: ", valor
+    FinSubProceso
+
+FinAlgoritmo

@@ -1,0 +1,47 @@
+Algoritmo Psuedo_6
+    Proceso CICon4Digitos
+        Definir ci, digitoMayor, digitoMenor Como Entero
+
+        Escribir "Ingrese un CI (al menos 4 dígitos mayores a 6):"
+        Leer ci
+
+        digitoMayor = Dig_Mayor(ci)
+        digitoMenor = Dig_Menor(ci)
+
+        Escribir "Dígito mayor: ", digitoMayor
+        Escribir "Dígito menor: ", digitoMenor
+    FinProceso
+
+    Funcion Dig_Mayor(ci) Como Entero
+        Definir n, mayor, digito Como Entero
+        n = ci
+        mayor = 0
+
+        Mientras n > 0 Hacer
+            digito = n % 10
+            Si digito > mayor Entonces
+                mayor = digito
+            FinSi
+            n = n / 10
+        FinMientras
+
+        Retornar mayor
+    FinFuncion
+
+    Funcion Dig_Menor(ci) Como Entero
+        Definir n, menor, digito Como Entero
+        n = ci
+        menor = 9
+
+        Mientras n > 0 Hacer
+            digito = n % 10
+            Si digito < menor Entonces
+                menor = digito
+            FinSi
+            n = n / 10
+        FinMientras
+
+        Retornar menor
+    FinFuncion
+
+FinAlgoritmo

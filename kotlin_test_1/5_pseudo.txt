@@ -1,0 +1,35 @@
+Algoritmo Pseudo_5
+
+    Proceso InvertirCodigo
+        Definir codigo, invertido Como Entero
+
+        Escribir "Ingrese un código de 5 dígitos:"
+        Leer codigo
+
+        invertido = Invierte(codigo)
+        Muestra(invertido)
+    FinProceso
+
+    Funcion Invierte(numero) Como Entero
+        Definir n, invertido, digito Como Entero
+        n = numero
+        invertido = 0
+
+        Mientras n > 0 Hacer
+            digito = Mod(n, 10)
+            invertido = invertido * 10 + digito
+            n = n / 10
+        FinMientras
+
+        Retornar invertido
+    FinFuncion
+
+    Funcion Mod(a, b) Como Entero
+        Retornar a % b
+    FinFuncion
+
+    SubProceso Muestra(valor)
+        Escribir "El número invertido es: ", valor
+    FinSubProceso
+
+FinAlgoritmo

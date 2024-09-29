@@ -1,0 +1,33 @@
+Algoritmo sin_titulo
+    Proceso CodigoConDigitosIguales
+        Definir codigo Como Entero
+        Definir central Como Cadena
+
+        Escribir "Ingrese un código donde el primer y último dígito sean iguales:"
+        Leer codigo
+
+        Si Valida(codigo) Entonces
+            central = Saca_Central(codigo)
+            Muestra(central)
+        Sino
+            Escribir "El primer y último dígito no son iguales."
+        FinSi
+    FinProceso
+
+    Funcion Valida(codigo) Como Logico
+        Definir codigoStr Como Cadena
+        codigoStr = convertirATexto(codigo)
+        Retornar Subcadena(codigoStr, 1, 1) = Subcadena(codigoStr, Largo(codigoStr), 1)
+    FinFuncion
+
+    Funcion Saca_Central(codigo) Como Cadena
+        Definir codigoStr Como Cadena
+        codigoStr = convertirATexto(codigo)
+        Retornar Subcadena(codigoStr, 2, Largo(codigoStr) - 2)
+    FinFuncion
+
+    SubProceso Muestra(central)
+        Escribir "Parte central del código: ", central
+    FinSubProceso
+
+FinAlgoritmo

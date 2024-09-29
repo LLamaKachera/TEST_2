@@ -1,0 +1,27 @@
+Algoritmo sin_titulo
+	Proceso Ordenar4Numeros
+        Definir num1, num2, num3, num4 Como Entero
+        Definir numeros Como Vector De 4 Entero
+
+        Escribir "Ingrese 4 números:"
+        Leer num1, num2, num3, num4
+
+        numeros[1] = num1
+        numeros[2] = num2
+        numeros[3] = num3
+        numeros[4] = num4
+
+        Para i = 1 Hasta 3 Hacer
+            Para j = i + 1 Hasta 4 Hacer
+                Si numeros[i] > numeros[j] Entonces
+                    Definir temp Como Entero
+                    temp = numeros[i]
+                    numeros[i] = numeros[j]
+                    numeros[j] = temp
+                FinSi
+            FinPara
+        FinPara
+
+        Escribir "Números ordenados: ", numeros[1], ", ", numeros[2], ", ", numeros[3], ", ", numeros[4]
+    FinProceso
+FinAlgoritmo
